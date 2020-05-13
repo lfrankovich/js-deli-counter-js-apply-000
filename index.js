@@ -15,13 +15,13 @@ return ('Currently serving ' + katzDeliLine.shift() + '.');
 }
 
 
-function currentLine(DeliLine) {
+function currentLine(deliLine) {
 var newLine = [];
-if (DeliLine.length === 0) {
+if (deliLine.length === 0) {
    return "The line is currently empty.";
    }
-     for (var i = 0; i < DeliLine.length; i++) {
-       newLine.push(" " + (i+1) + ". " + DeliLine[i]);
+     for (var i = 0; i < deliLine.length; i++) {
+       newLine.push(" " + (i+1) + ". " + deliLine[i]);
      }
        return "The line is currently:" + newLine;
 }
